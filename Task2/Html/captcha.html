@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Captcha Form</title>
+    <link rel="stylesheet" href="../CSS/captcha.css">
+</head>
+<body>
+    
+<div class="box">
+    <h2 class="form-title">Captcha Validator</h2>
+    <form id="myForm">
+        <!-- Initial inputs -->
+<input type="text" placeholder="Enter Name" required>
+<input type="email" placeholder="Enter Email" required>
+
+        <!-- Captcha (hidden initially) -->
+<div id="captchaBox" class="hidden">
+    <h3 class="captcha-heading">Captcha Verification</h3>
+    <p id="captchaText"></p>
+    <input type="text" id="captchaInput" placeholder="Enter captcha">
+</div>
+
+
+        <!-- Extra input (hidden initially) -->
+        <input type="text" id="thirdInput" class="hidden" placeholder="Enter third value">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="../Javascript/captcha.js"></script>
+</body>
+</html>
